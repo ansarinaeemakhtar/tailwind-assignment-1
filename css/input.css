@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hideScrollHandle::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.weekDay {
+  @apply text-xs text-center flex flex-col leading-3 basis-full;
+}
+.day {
+  @apply rounded-md border border-gray-400 text-xs bg-white p-1 text-center w-7 h-7 mb-1 mx-auto;
+}
+
+.dayClass {
+  @apply rounded-md border border-pink-600 text-xs bg-pink-600 text-white p-1 text-center w-7 h-7 mb-1 mx-auto;
+}
+
+.userDP {
+  @apply h-12 w-12 rounded-full border border-gray-400;
+}
+
+.para {
+  @apply text-sm leading-6 mb-4;
+}
+
+.footerSocial {
+  @apply h-8 w-8;
+}
+
+.footerLinkTitle {
+  @apply uppercase font-bold;
+}
+
+.btnPink {
+  @apply text-white bg-pink-600;
+}
+
+.btnPinkOutline {
+  @apply border border-pink-600 text-pink-600 bg-white text-center;
+}
+
+.bulletPink {
+  @apply h-6 w-6 text-pink-600 inline-block mr-3;
+}
+
+.sessionInfo {
+  @apply text-xl text-white flex items-center;
+}
+
+.sessionNumber {
+  @apply h-12 w-12 flex items-center justify-center text-lg text-blue-700 bg-white rounded-full mr-2;
+}
